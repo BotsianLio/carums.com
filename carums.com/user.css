@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'Federation';
+  src: url('fonts/Federation.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #036009; 
+  padding: 10px;
+  z-index: 1000; /* Ensure it appears above other content */
+}
+.navbar_font {
+  float: right; /* Adjust alignment */
+  color: white;
+  text-align: center;
+  font-size: 17px;
+  padding: 15px 130px 10px 10px;
+  text-decoration: none;
+}
+.navbar_font:hover {
+  color: rgb(252, 232, 2);
+}
+#homepage{
+  font-family:'Federation', Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  margin: 0;
+  float: left; /* Adjust alignment */
+  color: white;
+  text-align: center;
+  padding: 10px 10px 10px 35px;
+  text-decoration: none;
+}
+#homepage:hover {
+  color: rgb(252, 232, 2);
+}
+
+/*
+navbar end configs here
+*/
