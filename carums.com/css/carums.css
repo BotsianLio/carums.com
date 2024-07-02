@@ -1,0 +1,338 @@
+@font-face {
+  font-family: 'Federation';
+  src: url('../fonts/Federation.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #036009; 
+  padding: 10px;
+  z-index: 1000; /* Ensure it appears above other content */
+}
+.navbar_font {
+  float: right; /* Adjust alignment */
+  color: white;
+  text-align: center;
+  font-size: 17px;
+  padding: 15px 130px 10px 10px;
+  text-decoration: none;
+}
+.navbar_font:hover {
+  color: rgb(252, 232, 2);
+}
+#homepage{
+  font-family:'Federation', Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  margin: 0;
+  float: left; 
+  color: white;
+  text-align: center;
+  padding: 10px 10px 10px 35px;
+  text-decoration: none;
+}
+#homepage:hover {
+  color: rgb(252, 232, 2);
+}
+
+/*
+navbar end configs here
+*/
+
+.container_c{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.searchbar{
+  width: 100%;
+  max-width: 445px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  border-radius: 30px;
+  padding: 5px 10px 5px 10px;
+  margin-left: auto; 
+  margin-right: auto;
+}
+.searchbar input{
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  font-size: 17px;
+  padding-right: 1px;
+  font-family: Verdana, sans-serif;
+}
+.searchbar button img{
+  width: 25px;
+}
+.searchbar button{
+  border: 0;
+  border-radius: 50%;
+  background-color:#036009; 
+  width: 40px;
+  height: 40px;
+}
+.searchbar button:hover {
+  background-color:rgb(252, 232, 2);
+}
+
+/*
+search bar end here
+*/
+
+.homepage_pic {
+  position: relative;
+  display: inline-block;
+}
+#ad0 {
+  width: 100%;  /* Adjust the width as needed */
+  height: auto;  /* Maintain aspect ratio */
+  border: none;  /* Remove any default border */
+  filter: brightness(70%);
+}
+.ad0_text {
+  font-family:'Federation', Arial, sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  position: absolute;
+  top: 70%; /* Adjust top positioning as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white; 
+  text-align: center; /* Center align text */
+  padding: 10px 20px;
+  z-index: 1; /* Ensure text is above background */
+}
+
+/*
+ad pic end here
+*/
+
+#hot_carums_title {
+  font-size: 24px;
+  padding: 20px;
+  margin: 20px 0;
+}
+.hot_carums {
+  display: flex;
+  justify-content: center; /* Center aligns the items horizontally */
+  gap: 20px; /* Adjust the gap between the two image boxes */
+}
+.hot_carums_p {
+  width: 480px;
+  height: 350px;
+  position: relative; /* Position relative for absolute positioning of .text-overlay */
+  border-radius: 20px;
+  display: block; /* Ensure anchor tag behaves like a block element */
+}
+.hot_carums_p_inner {
+  width: 100%;
+  height: 100%;
+  position: relative; /* Ensure .text-overlay is positioned relative to .image-inner */
+  overflow: hidden;
+  border-radius: 20px;
+  display: block; /* Ensure anchor tag behaves like a block element */
+}
+.hot_carums_p_inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: transform 0.3s ease; /* Smooth transition for transform */
+}
+.hot_carums_p_inner img:hover {
+  transform: scale(1.05); /* Enlarge the image box on hover */
+}
+.dim_top,
+.dim_bot {
+    position: absolute;
+    width: 100%;
+    z-index: 1; /* Ensure it's above the image */
+}
+.dim_top {
+  top: 0;
+  left: 0;
+  height: 30%; /* Adjust top dim height */
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)); /* Gradient for top dimming */
+}
+.dim_bot {
+  bottom: 0;
+  left: 0;
+  height: 30%; /* Adjust bottom dim height */
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)); /* Gradient for bottom dimming */
+}
+.hot_carums_overlay {
+  position: absolute;
+  color: #fff;
+  z-index: 2; /* Ensure text appears above the image */
+  width: 100%; /* Full width */
+  padding: 0 20px; /* Padding to control width */
+}
+.s0_top {
+  top: 7px; /* Adjust from top */
+  left: 0px; /* Adjust from left */
+  font-size: 18px;
+}
+.hot_carums_overlay_btn {
+  position: absolute;
+  z-index: 2;
+  top: 20px; /* Adjust from top */
+  right: 20px; /* Adjust from right */
+  padding: 10px 20px;
+  background-color: rgba(241, 243, 246, 0.3); /* Semi-transparent background */
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+.hot_carums_overlay_btn:hover {
+  background-color: rgba(251, 252, 253, 0.5); /* Darker semi-transparent background on hover */
+}
+.show_all_c {
+  position: relative;
+  font-size: 16px;
+  bottom: 10px; /* Position 20px from the bottom */
+  left: 1170px; /* Position 20px from the right */
+  color: #036009;
+  text-decoration: none;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+.show_all_c:hover {
+  color:black;
+}
+
+/*
+hot/recommend carums parts end here
+*/
+
+#hot_carums_title p {
+  color: #666;
+}
+.advice {
+  display: flex;
+  align-items: flex-start; /* Align items at the top */
+  justify-content: center; /* Center the flex items */
+  gap: 20px; /* Space between image and text */
+  padding: 20px;
+}
+.advice_p {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden; /* Hide overflow for border radius */
+}
+.advice_p_inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.advice_p_inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.advice_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 1620px;
+  color: inherit;
+  text-decoration: none;
+}
+.advice_text h2 {
+  margin: 0;
+  font-size: 95px;
+  color:#013d04;
+  text-decoration: none;
+}
+.advice_text p {
+  margin: 15px 0;
+  font-size: 16.1px;
+  color: #666;
+  line-height: 1.55; /* Increased line spacing */
+}
+.advice_c {
+  display: flex;
+  gap: 60px; /* Adjust the space between the anchors */
+}
+.advice_c0 {
+  display: flex;
+  position: relative;
+  bottom: auto;
+  left: 0px;
+  top: 30px;
+  font-size: 19px;
+  padding: 10px 20px;
+  color: #036009;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.07); /* Semi-transparent background */
+  border-radius: 15px;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  border: none; /* Remove border */
+  cursor: pointer;
+}
+.advice_c0:hover {
+  color:black;
+}
+
+/*
+advice section end here
+*/
+
+section {
+  padding: 20px;
+  margin: 5px 0;
+  background-color: rgba(0, 0, 0, 0.03); /* Semi-transparent background */
+}
+
+/*
+section part end here
+*/
+
+footer {
+  background-color: #036009;
+  color: #fff;
+  text-align: center;
+  font-family:'Federation', Arial, sans-serif;
+  padding: 10px 20px;
+}
+.footer_c {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_c ul {
+  list-style-type: none;
+  padding: 0;
+}
+.footer_c ul li {
+  display: inline;
+  margin-right: 10px;
+}
+.footer_c ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer_c ul li a:hover {
+  color: yellow; /* Change text color to yellow on hover */
+}
+.footer_b {
+  margin-top: 170px;
+  font-size: 40px;
+  font-weight: 900;
+}
