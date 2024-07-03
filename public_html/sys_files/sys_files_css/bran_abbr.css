@@ -1,0 +1,132 @@
+@font-face {
+  font-family: 'Federation';
+  src: url('../../fonts/Federation.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #036009; 
+  padding: 10px;
+  z-index: 1000; /* Ensure it appears above other content */
+}
+.navbar_font {
+  float: right; /* Adjust alignment */
+  color: white;
+  text-align: center;
+  font-size: 17px;
+  padding: 15px 130px 10px 10px;
+  text-decoration: none;
+}
+.navbar_font:hover {
+  color: rgb(252, 232, 2);
+}
+#homepage{
+  font-family:'Federation', Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  margin: 0;
+  float: left; /* Adjust alignment */
+  color: white;
+  text-align: center;
+  padding: 10px 10px 10px 35px;
+  text-decoration: none;
+}
+#homepage:hover {
+  color: rgb(252, 232, 2);
+}
+
+/*
+navbar end configs here
+*/
+
+.chart {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+.chart-title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.chart-text {
+  font-family:'Federation', Arial, sans-serif;
+  font-size: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.chart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+.chart-table th, .chart-table td {
+  padding: 7.5px; /* Increase padding for better spacing */
+  text-align: center; /* Center align table cells */
+  border: 1px solid #ccc;
+}
+.chart-table th {
+  background-color: #036009;
+  color: white;
+  font-size: 20px; /* Increase font size for table header */
+}
+.chart-table td {
+  background-color: #ffffff;
+  font-size: 20px; /* Increase font size for table data */
+}
+section {
+  padding: 60px;
+  margin: 5px 0;
+  background-color: rgba(0, 0, 0, 0.03); /* Semi-transparent background */
+}
+
+/*
+chart part ends here
+*/
+
+footer {
+  background-color: #036009;
+  color: #fff;
+  text-align: center;
+  font-family:'Federation', Arial, sans-serif;
+  padding: 10px 20px;
+}
+.footer_c {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer_c ul {
+  list-style-type: none;
+  padding: 0;
+}
+.footer_c ul li {
+  display: inline;
+  margin-right: 10px;
+}
+.footer_c ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.footer_c ul li a:hover {
+  color: yellow; /* Change text color to yellow on hover */
+}
+.footer_b {
+  margin-top: 170px;
+  font-size: 40px;
+  font-weight: 900;
+}
